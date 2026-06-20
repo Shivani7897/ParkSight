@@ -1,8 +1,0 @@
-feature,importance
-hour,0.2569298
-day_of_week,0.0242347
-Is_Weekend,0.02313043
-month,0.021724898
-Lag_1_Shift,0.0696901
-Lag_1_Day,0.3533948
-Lag_1_Week,0.2508952
