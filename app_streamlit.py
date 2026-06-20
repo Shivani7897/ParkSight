@@ -102,11 +102,11 @@ DARK = dict(
 # ════════════════════════════════════════════════════════════════
 @st.cache_data
 def load_data():
-    df      = pd.read_csv("data/violations_features.csv",
+    df      = pd.read_csv("data/violations_features.csv.gz",
                           parse_dates=["created_datetime"])
     cluster = pd.read_csv("data/cluster_map_data.csv")
     dq      = pd.read_csv("data/dispatch_queue.csv")
-    msg     = pd.read_csv("data/micro_shift_grid.csv",
+    msg     = pd.read_csv("data/micro_shift_grid.csv.gz",
                           parse_dates=["time_floor_4h"])
     fi      = pd.read_csv("data/feature_importance.csv")
     # Strip invisible spaces from column names to prevent KeyErrors globally
