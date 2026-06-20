@@ -753,7 +753,7 @@ with t4:
         st.plotly_chart(fig_sp, use_container_width=True)
 
     with col_av:
-        model_grid = pd.read_csv("data/model_grid.csv")
+        model_grid = pd.read_csv("data/model_grid.csv.gz")
         # Pick the busiest cluster for illustration
         top_cluster = (
             model_grid.groupby("cluster_id")["Total_Footprint"]
